@@ -477,10 +477,34 @@ h2 {
 }
 .discography__albums-container {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .album {
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 47px 30px 70px;
+  max-width: 456px;
 }
 .album__container {
   display: flex;
+  justify-content: space-between;
+}
+.album__info {
+  margin: 0 16px 0 0;
+}
+.album__year {
+  text-align: center;
+  font-size: 14px;
+}
+.album__title {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 4px 0 16px 0;
+}
+.album__tracks {
+  font-size: 14px;
+  margin: 0;
+  padding-left: 21px;
+  line-height: 17px;
 }
