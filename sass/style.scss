@@ -1,11 +1,195 @@
 @import 'reset';
 @import 'mixins';
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@700&display=swap');
 
-* {
-	font-family: 'xxxx', sans-serif;
+body {
+	@include lato;
+	font-weight: $fw-regular;
+	color: $col-white;
+}
+.wrapper-inner {
+	max-width: 1280px;
+	margin: 0 auto;
+	&_big {
+		max-width: 1408px;
+	}
+	// @media (max-width: 1280px) {
+	// 	max-width: 850px;
+	// }
+	@media (max-width: 768px) {
+		max-width: 510px;
+	}
+	@media (max-width: 375px) {
+		max-width: 250px;
+	}
+}
+.wrapper-outer {
+	// max-width: 100%;
+}
+section {
+	background-color: $col-darkblue;
+}
+h2 {
+	@include lora;
+	font-weight: $fw-bold;
+	font-size: 48px;
+	text-align: center;
+}
+// === header ===
+.menu {
+	padding: 0;
+	@include flexbox();
+	justify-content: center;
+	font-weight: $fw-bold;
+	list-style-type: none;
+	@media (max-width: 768px) {
+		flex-wrap: wrap;
+	}
+	&__item {
+		display: block;
+		text-decoration: none;
+		font-size: 18px;
+		color: $col-white;
+		padding: 21.65px 56px 21.65px 56px;
+		&_central {
+			@include lora;
+			font-size: 24px;
+			background-color: $col-red;
+			padding: 18.2px 94px 18.2px 94px;
+			@media (max-width: 375px) {
+				padding: 21.65px 21.65px ;
+			}
+		}
+	}
+}
+// === / header ===
+// === hero-image ===
+.hero-image {
+	font-weight: $fw-bold;
+		&__container {
+			background-image: linear-gradient(rgba(29, 30, 38, 0.7), rgba(29, 30, 38, 0.7)), url("../img/hero_image.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			height: 100vh; //?? or rem??
+			@include flexbox();
+			flex-direction: column;
+			align-items: center;
+    	justify-content: center;
+			@media (max-width: 1020px) {
+				background-position: 15% 50%;
+			}
+		}
+		&__title {
+			@include lora;
+			font-size: 72px;
+			text-shadow: -2px 2px 0px $col-red;
+			text-align: center;
+			margin: 0 30px 5px 30px;
+			padding: 4.61px 0;
+			@media (max-width: 375px) {
+				margin-bottom: 20px;
+			}
+		}
+		&__subtitle {
+			font-size: 24px;
+			max-width: 586px;
+			text-align: center;
+			margin: 0 30px 0 30px;
+			padding: 1.4px 0;
+		}
+}
+// === / hero-image ===
+// === biography ===
+.biography {
+	padding: 237px 40px 233px 40px;
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__text {
+			padding: 66px 0 0 0;
+			max-width: 640px;
+			margin-right: 30px;
+		}
+		&__title {
+			margin: 0 0 32px 0;
+		}
+		&__paragraph {
+			font-size: 18px;
+			line-height: 22px;
+			margin: 0 0 30px 0;
+		}
+		&__image {
+			padding: 21.2% 17%;
+			background-image: url("../img/biography.png");
+			z-index: 5;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: relative;
+			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		}
+		@media (max-width: 1020px) {
+			padding: 137px 40px 133px 40px;
+			&__container {
+				flex-direction: column;
+			}
+			&__text {
+				padding: 0;
+				max-width: 100%;
+				margin-right: 0;
+				margin-bottom: 30px;
+		}
+			&__image {
+				padding: 63.2% 1%;
+			}
+		}
+		@media (max-width: 300px) {
+			&__title {
+				font-size: 40px;;
+			}
+		}
+}
+// === / biography ===
+// === discography ===
+.discography {
+		&__title {
+			margin: -1px 0 56px 0;
+		}
+		&__albums-container {
+			display: flex;
+		}
+		&__album {
+		}
+}
+.album {
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+		&__container {
+			display: flex;
+		}
+		&__info {
+		}
+		&__image {
+		}
+		&__year {
+		}
+		&__content {
+		}
+		&__title {
+		}
+		&__tracks {
+		}
+		&__track {
+		}
 }
 
+// === / discography ===
+// === footer ===
+// === / footer ===
 
 
 

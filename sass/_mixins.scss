@@ -6,3 +6,9 @@
 	display: flex;
 	font-size: 0;
 }
+@mixin lato {
+	font-family: 'Lato', sans-serif;
+}
+@mixin lora {
+	font-family: 'Lora', serif;
+}

@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,6 +309,178 @@ template {
   display: none;
 }
 
-* {
-  font-family: "xxxx", sans-serif;
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #F2F2F2;
+}
+
+.wrapper-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.wrapper-inner_big {
+  max-width: 1408px;
+}
+@media (max-width: 768px) {
+  .wrapper-inner {
+    max-width: 510px;
+  }
+}
+@media (max-width: 375px) {
+  .wrapper-inner {
+    max-width: 250px;
+  }
+}
+
+section {
+  background-color: #1D1E26;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  font-weight: 700;
+  list-style-type: none;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+  }
+}
+.menu__item {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #F2F2F2;
+  padding: 21.65px 56px 21.65px 56px;
+}
+.menu__item_central {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  background-color: #8C111B;
+  padding: 18.2px 94px 18.2px 94px;
+}
+@media (max-width: 375px) {
+  .menu__item_central {
+    padding: 21.65px 21.65px;
+  }
+}
+
+.hero-image {
+  font-weight: 700;
+}
+.hero-image__container {
+  background-image: linear-gradient(rgba(29, 30, 38, 0.7), rgba(29, 30, 38, 0.7)), url("../img/hero_image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1020px) {
+  .hero-image__container {
+    background-position: 15% 50%;
+  }
+}
+.hero-image__title {
+  font-family: "Lora", serif;
+  font-size: 72px;
+  text-shadow: -2px 2px 0px #8C111B;
+  text-align: center;
+  margin: 0 30px 5px 30px;
+  padding: 4.61px 0;
+}
+@media (max-width: 375px) {
+  .hero-image__title {
+    margin-bottom: 20px;
+  }
+}
+.hero-image__subtitle {
+  font-size: 24px;
+  max-width: 586px;
+  text-align: center;
+  margin: 0 30px 0 30px;
+  padding: 1.4px 0;
+}
+
+.biography {
+  padding: 237px 40px 233px 40px;
+}
+.biography__container {
+  display: flex;
+  justify-content: space-between;
+}
+.biography__text {
+  padding: 66px 0 0 0;
+  max-width: 640px;
+  margin-right: 30px;
+}
+.biography__title {
+  margin: 0 0 32px 0;
+}
+.biography__paragraph {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 30px 0;
+}
+.biography__image {
+  padding: 21.2% 17%;
+  background-image: url("../img/biography.png");
+  z-index: 5;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 1020px) {
+  .biography {
+    padding: 137px 40px 133px 40px;
+  }
+  .biography__container {
+    flex-direction: column;
+  }
+  .biography__text {
+    padding: 0;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .biography__image {
+    padding: 63.2% 1%;
+  }
+}
+@media (max-width: 300px) {
+  .biography__title {
+    font-size: 40px;
+  }
+}
+
+.discography__title {
+  margin: -1px 0 56px 0;
+}
+.discography__albums-container {
+  display: flex;
+}
+.album {
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.album__container {
+  display: flex;
 }
