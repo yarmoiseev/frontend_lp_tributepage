@@ -327,9 +327,9 @@ body {
     max-width: 510px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .wrapper-inner {
-    max-width: 250px;
+    max-width: 270px;
   }
 }
 
@@ -360,6 +360,7 @@ h2 {
 .menu__item {
   display: block;
   text-decoration: none;
+  text-align: center;
   font-size: 18px;
   color: #F2F2F2;
   padding: 21.65px 56px 21.65px 56px;
@@ -370,7 +371,7 @@ h2 {
   background-color: #8C111B;
   padding: 18.2px 94px 18.2px 94px;
 }
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .menu__item_central {
     padding: 21.65px 21.65px;
   }
@@ -405,7 +406,7 @@ h2 {
   margin: 0 30px 5px 30px;
   padding: 4.61px 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .hero-image__title {
     margin-bottom: 20px;
   }
@@ -466,28 +467,63 @@ h2 {
     padding: 63.2% 1%;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 420px) {
   .biography__title {
     font-size: 40px;
   }
 }
 
 .discography__title {
-  margin: -1px 0 56px 0;
+  margin: -2px 0 56px 0;
 }
 .discography__albums-container {
   display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+.discography__albums-column {
+  flex: 0 1 33.333%;
+  margin-right: 20px;
+}
+.discography__albums-column:last-child {
+  margin-right: 4px;
+}
+.discography__more {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: -1px;
+  padding-bottom: 80px;
+}
+.discography__more a:link, .discography__more a:visited {
+  color: #F2F2F2;
+}
+.discography__more a:hover, .discography__more a:active {
+  color: grey;
+}
+@media (max-width: 1408px) {
+  .discography__albums-container {
+    flex-wrap: wrap;
+  }
+  .discography__albums-column {
+    flex: 0 1 100%;
+    max-width: 456px;
+    margin-right: 4px;
+  }
+}
+@media (max-width: 420px) {
+  .discography__title {
+    font-size: 40px;
+  }
 }
 
 .album {
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 30px 47px 30px 70px;
-  max-width: 456px;
+  padding: 32px 34px 32px 34px;
+  margin: 0 0 60px 0;
 }
 .album__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .album__info {
   margin: 0 16px 0 0;
@@ -507,4 +543,32 @@ h2 {
   margin: 0;
   padding-left: 21px;
   line-height: 17px;
+  height: 200px;
+  white-space: nowrap;
+}
+@media (max-width: 550px) {
+  .album {
+    padding: 16px 17px;
+    margin-bottom: 30px;
+  }
+  .album__container {
+    flex-wrap: wrap;
+  }
+}
+
+.footer {
+  background-color: #8C111B;
+  padding: 21px;
+}
+.footer__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  margin: -1px 0px;
+}
+.footer__text a:link, .footer__text a:visited {
+  color: #F2F2F2;
+}
+.footer__text a:hover, .footer__text a:active {
+  color: grey;
 }
