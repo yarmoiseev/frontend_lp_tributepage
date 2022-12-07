@@ -13,20 +13,20 @@
 			<div class="wrapper-inner">
 				<nav>
 					<ul class="header__menu menu">
-						<li><a class="menu__item" href="#">Biography</a></li>
+						<li><a class="menu__item" href="#bio">Biography</a></li>
 						<li><a class="menu__item menu__item_central" href="#">Tribute Page</a></li>
-						<li><a class="menu__item" href="#">Discography</a></li>
+						<li><a class="menu__item" href="#disc">Discography</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
 		<!-- / header -->
 	</header>
-	<main>
+	<main id="main">
 		<!-- hero-image -->
 		<section class="wrapper-outer hero-image">
 				<div class="hero-image__container">
-					<h1 class="hero-image__title">Elis Regina</h1>
+					<h1 class="hero-image__title" id="title">Elis Regina</h1>
 					<h2 class="hero-image__subtitle">One of the most ferociously talented singers to emerge from Brazil.</h2>
 				</div>
 		</section>
@@ -35,7 +35,8 @@
 		<section class="wrapper-outer biography">
 			<div class="wrapper-inner">
 				<div class="biography__container">
-					<div class="biography__text">
+					<a name="bio" class="biography__link"></a>
+					<div class="biography__text" id="tribute-info">
 						<h2 class="biography__title">Biography</h2>
 						<p class="biography__paragraph">Elis Regina Carvalho Costa (17 March 1945 – 19 January 1982) was born in Porto Alegre, Brazil, where she began her career as singer at age 11 on a children's radio show, Rádio Farroupilha. She won her first festival song contest in 1965 singing "Arrastão" ("The Trawling Net") by Edu Lobo and Vinícius de Moraes.</p>
 						<p class="biography__paragraph">She recorded songs by such musicians as Gilberto Gil, Antônio Carlos Jobim, Milton Nascimento, João Bosco, Aldir Blanc, Chico Buarque, Jorge Ben and Caetano Veloso. She had an exciting voice and superb intonation, and excelled at up-tempo numbers. Her nickname was "Furacão" ("The Hurricane"), and also "Pimentinha" ("Little Pepper").</p>
@@ -50,6 +51,7 @@
 		<!-- discography -->
 		<section class="wrapper-outer discography">
 			<div class="wrapper-inner wrapper-inner_big">
+				<a name="disc" class="dscography__link"></a>
 				<h2 class="discography__title">Discography</h2>
 				<div class="discography__albums-container">
 					<div class="discography__albums-column">
@@ -207,7 +209,7 @@
 						</div>
 					</div>
 				</div>
-				<p class="discography__more">Click here to see<a href="https://open.spotify.com/artist/0yFvXd36g5sNKYDi0Kkvl8"> more albuns from Elisa.</a></p>
+				<p class="discography__more">Click here to see<a href="https://open.spotify.com/artist/0yFvXd36g5sNKYDi0Kkvl8" id="tribute-link" target="_blank"> more albuns from Elisa.</a></p>
 			</div>
 		</section>
 		<!-- / discography -->
@@ -216,7 +218,7 @@
 		<!-- footer -->
 		<section class="wrapper-outer footer">
 			<div class="wrapper-inner">
-				<p class="footer__text">© 2022 · Tribute Page by <a href="https://www.figma.com/@colaresamanda">Amanda Colares</a></p>
+				<p class="footer__text">© 2022 · Figma layout from <a href="https://www.figma.com/@colaresamanda">Amanda Colares</a></p>
 			</div>
 		</section>
 		<!-- / footer -->
