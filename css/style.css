@@ -317,6 +317,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #F2F2F2;
+  background-color: #1D1E26;
 }
 
 .wrapper-inner {
@@ -335,10 +336,6 @@ body {
   .wrapper-inner {
     max-width: 270px;
   }
-}
-
-section {
-  background-color: #1D1E26;
 }
 
 h2 {
@@ -498,10 +495,12 @@ h2 {
   margin-bottom: -1px;
   padding-bottom: 80px;
 }
-.discography__more a:link, .discography__more a:visited {
+.discography__more a:link,
+.discography__more a:visited {
   color: #F2F2F2;
 }
-.discography__more a:hover, .discography__more a:active {
+.discography__more a:hover,
+.discography__more a:active {
   color: grey;
 }
 @media (max-width: 1408px) {
@@ -570,9 +569,11 @@ h2 {
   line-height: 22px;
   margin: -1px 0px;
 }
-.footer__text a:link, .footer__text a:visited {
+.footer__text a:link,
+.footer__text a:visited {
   color: #F2F2F2;
 }
-.footer__text a:hover, .footer__text a:active {
+.footer__text a:hover,
+.footer__text a:active {
   color: grey;
 }
